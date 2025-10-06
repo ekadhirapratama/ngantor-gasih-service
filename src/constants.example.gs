@@ -1,0 +1,5 @@
+var SPREADSHEET_URL =
+var SHEET_NAME = 
+var SHEET_NAME_MONTH = 
+var FOLDER_NAME = 
+var FILE_NAME = 

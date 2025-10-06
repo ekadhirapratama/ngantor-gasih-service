@@ -6,7 +6,7 @@ function saveJsonToDrive(jsonData) {
   if (file.hasNext()) {
     file.next().setContent(content);
   } else {
-    folder.createFile(FILE_NAME, content, MimeType.JSON);
+    folder.createFile(FILE_NAME, content, MimeType.PLAIN_TEXT);
   }
 }
 

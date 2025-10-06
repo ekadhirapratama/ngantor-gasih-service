@@ -9,16 +9,8 @@ function generateScheduleData() {
 
   var dataArray = [];
   var dateRow = values[2]; // Row 3 (0-indexed) contains dates (01, 02, ...)
-  var sheetMonthAbbr = SHEET_NAME.replace("JDWL ", "").toUpperCase(); // Get month abbreviation from sheet name
 
-  // Mapping for Indonesian month abbreviations to month numbers
-  var monthMapping = {
-    "JAN": "01", "FEB": "02", "MAR": "03", "APR": "04",
-    "MEI": "05", "JUN": "06", "JUL": "07", "AGU": "08",
-    "SEP": "09", "OKT": "10", "NOV": "11", "DES": "12",
-  };
-
-  var month = monthMapping[sheetMonthAbbr];
+  var month = SHEET_NAME_MONTH;
   var year = "2025"; // Assuming the year is 2025 based on sample data
 
   if (!month) {
